@@ -1,0 +1,7 @@
+#Wed Dec 14 12:17:43 CET 2016
+base.0=/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3e5c22ba228af4cb5f28106a82f7b16226b9e1b1
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e43f238614f3270ce2845ad488536ce384bba1ab/classes.dex
+base.1=/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e43f238614f3270ce2845ad488536ce384bba1ab
+file.0=/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3e5c22ba228af4cb5f28106a82f7b16226b9e1b1/classes.dex

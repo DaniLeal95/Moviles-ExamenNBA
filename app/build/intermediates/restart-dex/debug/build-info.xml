@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="24"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="14475246248316"
+    token="8459616364607777128"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="132" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="20" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="10753144924635"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="13275075235505"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="14317635066704"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="14475246248316"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/dleal/StudioProjects/ExamenPrimeraEvaluacion/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
