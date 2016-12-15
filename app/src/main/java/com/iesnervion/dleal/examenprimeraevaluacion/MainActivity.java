@@ -5,15 +5,14 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.PopupMenu;
-import android.support.v7.widget.Toolbar;
+import android.support.v7.*;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import android.widget.Toolbar;
 
 import com.iesnervion.dleal.examenprimeraevaluacion.datos.ListadoJugadores;
 import com.iesnervion.dleal.examenprimeraevaluacion.model.Jugador;
@@ -21,13 +20,15 @@ import com.iesnervion.dleal.examenprimeraevaluacion.model.Jugador;
 import java.util.List;
 import java.util.Vector;
 
+
+
 public class MainActivity extends ListActivity implements View.OnClickListener,AdapterView.OnItemLongClickListener, PopupMenu.OnMenuItemClickListener {
 
     //Aquí guardamos el jugador que vamos a editar
     private Jugador jugadorSeleccionado;
     Vector<Jugador> jugadores = new Vector<>(0,1);
     ListView lista;
-    FloatingActionButton fab;
+    private FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -3,16 +3,35 @@ package com.iesnervion.dleal.examenprimeraevaluacion.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.iesnervion.dleal.examenprimeraevaluacion.Utilidades.Utilidades;
+
+import java.io.Serializable;
+
 /**
  * Created by dleal on 7/12/16.
  */
 
-public class Jugador implements Parcelable {
+public class Jugador implements Serializable {
+
+    //SERIALIZABLE
+    private static final long serialVersionUID = -2995685764709883913L;
+
+    //Propiedad estatica para conocer la iddelutimo Jugador creado
+    public static long contadojugadores=0;
 
     private String nombre,posicion;
     private int img,altura,peso;
+    private long id;
 
     public Jugador(String nombre, String posicion, int img, int altura, int peso) {
+        /*Estas 4 lineas son para obtener el idCliente*/
+        Utilidades u=new Utilidades();
+        if(contadojugadores!=0){id=contadojugadores+1;}
+        else{id=u.cogerUltimaId("idjugadores.dat")+1;}
+        contadojugadores=id;
+        u.escribirUltimaId(id,"idjugadores.dat");
+
+		/*-------------------------------------------*/
         this.nombre = nombre;
         this.posicion = posicion;
         this.img = img;
@@ -60,44 +79,9 @@ public class Jugador implements Parcelable {
         this.peso = peso;
     }
 
-
-
-    //METODOS PARA HACER EL OBJETO PARCELABLE
-    @Override
-    public int describeContents() {
-        return 0;
+    public long getId() {
+        return id;
     }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
 
-        dest.writeString(this.nombre);
-        dest.writeString(this.posicion);
-        dest.writeValue(this.img);
-        dest.writeValue(this.altura);
-        dest.writeValue(this.peso);
-
-
-
-    }
-
-    protected Jugador(Parcel in) {
-        this.nombre = in.readString();
-        this.posicion = in.readString();
-        this.img = (Integer) in.readValue(Integer.class.getClassLoader());
-        this.altura =  (Integer) in.readValue(Integer.class.getClassLoader());
-        this.peso =  (Integer) in.readValue(Integer.class.getClassLoader());
-    }
-
-    public static final Creator<Jugador> CREATOR = new Creator<Jugador>() {
-        @Override
-        public Jugador createFromParcel(Parcel source) {
-            return new Jugador(source);
-        }
-
-        @Override
-        public Jugador[] newArray(int size) {
-            return new Jugador[size];
-        }
-    };
 }
